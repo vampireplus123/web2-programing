@@ -35,7 +35,8 @@ export const api = {
   }),
   createWord: handleError(async payload => {
     const res = await axios.post(baseURL, payload);
-    return res.data;
+    console.log('Create response:', res.data); // <-- kiểm tra trả về
+    return res.data.word;
   }),
   updateWord: handleError(async payload => {
     console.log('Sending update request for word:', payload);  // Log the payload before sending
