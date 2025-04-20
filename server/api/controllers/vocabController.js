@@ -1,5 +1,3 @@
-const mongoose = require('mongoose');
-// const Vocab = mongoose.model('Vocab');
 const Word = require('../models/vocabModel'); // <-- fix lỗi 'Word is not defined'
 
 exports.list_all_words = (req, res) => {
